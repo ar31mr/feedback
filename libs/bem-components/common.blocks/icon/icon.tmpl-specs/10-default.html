@@ -1,0 +1,1 @@
+<i aria-hidden="true" class="icon"></i>

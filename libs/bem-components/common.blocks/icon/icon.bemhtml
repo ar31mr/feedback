@@ -1,0 +1,9 @@
+block('icon')(
+    tag()('i'),
+    attrs()(function() {
+        var attrs = { 'aria-hidden' : 'true' },
+            url = this.ctx.url;
+        if(url) attrs.style = 'background-image:url(' + url + ')';
+        return attrs;
+    })
+);

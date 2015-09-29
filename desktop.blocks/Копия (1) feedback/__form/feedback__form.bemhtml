@@ -1,0 +1,8 @@
+block('feedback').elem('form')(
+	js()(true),
+    tag()('form')
+	/* attrs()(function() {
+       var ctx = this.ctx;
+         return { method: ctx.method, action: ctx.action }
+     })*/
+)

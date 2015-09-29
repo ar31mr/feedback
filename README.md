@@ -11,6 +11,8 @@
 
 2) Скопировать в desktop.blocks/ папки с блоками "feedback" и "feedback-init"
 3) Вставить в свой .bemjson.js файл страницы соответствующий код из desktop.bundles/feedback/feedback.bemjson.js
+3) В файле api/feedback/feedback.js в строке № 6 в случае если менял порт mongodb, пропиши свой!
+
 ###### Установка
 
 ###### ПРИМЕЧАНИЕ

@@ -1,0 +1,3 @@
+block('feedback-init')(
+	js()(true)	
+)
