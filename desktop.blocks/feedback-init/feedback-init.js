@@ -15,22 +15,24 @@ provide(BEMDOM.decl(this.name, {
              */
 
               var cookienow=this._getCookie('feedbackdata');
-              cookienow_arr = JSON.parse ( cookienow );              
-                 
-              //Заполняем поля формы из куки
-              cookienow_arr.forEach(function(item, i, arr) {
-                if(item.value!=''){
-                  //если textarea
-                  if(item.name=='feedback-message'){                
-                    $('textarea[name='+item.name+']').closest(".feedback__textarea").addClass("feedback__textarea_valid");  
-                    $('textarea[name='+item.name+']').val(item.value);
+              if(cookienow!=null){
+                cookienow_arr = JSON.parse ( cookienow );              
+                   
+                //Заполняем поля формы из куки
+                cookienow_arr.forEach(function(item, i, arr) {
+                  if(item.value!=''){
+                    //если textarea
+                    if(item.name=='feedback-message'){                
+                      $('textarea[name='+item.name+']').closest(".feedback__textarea").addClass("feedback__textarea_valid");  
+                      $('textarea[name='+item.name+']').val(item.value);
+                    }
+                    else if ( (item.name!='feedback-token') && (item.name!='feedback-id') ) {
+                      $('input[name='+item.name+']').closest(".feedback__input").addClass("feedback__input_valid");                
+                      $('input[name='+item.name+']').val(item.value);
+                    }                      
                   }
-                  else if ( (item.name!='feedback-token') && (item.name!='feedback-id') ) {
-                    $('input[name='+item.name+']').closest(".feedback__input").addClass("feedback__input_valid");                
-                    $('input[name='+item.name+']').val(item.value);
-                  }                      
-                }
-              });
+                });
+              }
             } 
         }
       },
