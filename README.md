@@ -7,7 +7,9 @@
 В моём примере это
 
 > var feedback = require('./api/feedback/feedback');
+
 > app.use('/api/feedback', feedback);
+
 
 2) Скопировать в desktop.blocks/ папки с блоками "feedback" и "feedback-init"
 3) Вставить в свой .bemjson.js файл страницы соответствующий код из desktop.bundles/feedback/feedback.bemjson.js
