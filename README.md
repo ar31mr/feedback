@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-########## feedback
-
+###### feedback
 
 ###### Установка
 1) Для запуска на своем БЭМ проекте достаточно в своем app.js (либо иной ...) добавить маршрут api/feedback на файл api/feedback/feedback.js
@@ -12,10 +10,12 @@
 
 
 2) Скопировать в desktop.blocks/ папки с блоками "feedback" и "feedback-init"
-3) Вставить в свой .bemjson.js файл страницы соответствующий код из desktop.bundles/feedback/feedback.bemjson.js
-3) В файле api/feedback/feedback.js в строке № 6 в случае если менял порт mongodb, пропиши свой!
 
-###### Установка
+3) Вставить в свой .bemjson.js файл страницы соответствующий код из desktop.bundles/feedback/feedback.bemjson.js
+
+4) В файле api/feedback/feedback.js в строке № 6 в случае если менял порт mongodb, пропиши свой!
+
+
 
 ###### ПРИМЕЧАНИЕ
 - Взят project-stub
@@ -33,10 +33,6 @@ express на 3000 порту
 ```sh
 $ npm start
 ```
-###### ПРИМЕЧАНИЕ
 
-Описание API сделаю после согласования key по маршруту GET /api/feedback,
- в данный описание можно подсмотреть в нашем файле
-=======
-# feedback
->>>>>>> 
+P.S.
+Описание API ..... после согласования key по маршруту GET /api/feedback, а в данный описание можно подсмотреть в нашем файле
